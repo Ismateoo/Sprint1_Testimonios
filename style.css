@@ -1,0 +1,179 @@
+* {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 13px;
+}
+
+/* CONTENEDORES */
+
+body {
+  background-color: hsl(210, 46%, 95%);
+}
+
+.contenedor {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.grilla {
+  display: grid;
+  max-width: 1440px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 30px;
+}
+
+.usuario {
+  display: grid;
+  grid-template-columns: 60px auto;
+}
+
+/* GENERAL TARJETAS */
+
+.tarjeta {
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.tarjeta--oscura {
+  color: hsl(0, 0%, 100%);
+}
+
+.tarjeta--clara {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(217, 19%, 35%);
+}
+
+/* TEXTO */
+
+.autor__nombre {
+  margin-bottom: 0px;
+}
+
+.autor__titulo {
+  opacity: 0.5;
+  margin-top: 0px;
+}
+
+.tarjeta__textoDestacado {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 0px;
+}
+
+.tarjeta__testimonio {
+  opacity: 0.7;
+  font-weight: 500;
+}
+
+/* IMAGENES */
+
+.usuario__imagen {
+  height: 40px;
+  width: 40px;
+  border-radius: 50px;
+}
+
+.usuario__imagen--borde {
+  border: 3px solid rgb(169, 117, 245);
+}
+
+/* TARJETA DANIEL */
+.tarjeta--Daniel {
+  background-image: url("img/bg-pattern-quotation.svg");
+  background-repeat: no-repeat;
+  background-position: top right 15%;
+  background-color: hsl(263, 55%, 52%);
+  grid-row: 1;
+  grid-column: span 2;
+}
+
+/* TARJETA JONATHAN */
+.tarjeta--Jonathan {
+  background-color: hsl(217, 19%, 35%);
+  grid-row: 1;
+  grid-column: 3;
+}
+
+/* TARJETA JEANETTE */
+.tarjeta--Jeanette {
+  grid-row: 2;
+  grid-column: 1;
+}
+
+/* TARJETA PATRICK */
+.tarjeta--Patrick {
+  background-color: hsl(219, 29%, 14%);
+  grid-row: 2;
+  grid-column: span 2;
+}
+
+/* TARJETA KIRA */
+.tarjeta--Kira {
+  grid-row: span 2;
+  grid-column: 4;
+}
+
+@media (max-width: 375px) {
+  .grilla {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    max-width: 375px;
+    margin: 50px 25px;
+  }
+}
+
+/*  body {
+    background-color: hsl(210, 46%, 95%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contenedor {
+    max-width: 375px;
+  }
+
+  .grilla {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 0.5fr 0.5fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    max-width: 375px;
+    margin: 50px 25px;
+  }
+
+  .tarjeta--Daniel {
+    grid-row: 1;
+    grid-column: 1;
+  }
+
+  .tarjeta--Jonathan {
+    grid-row: 2;
+    grid-column: 1;
+  }
+
+  .tarjeta--Jeanette {
+    grid-row: 3;
+    grid-column: 1;
+  }
+
+  .tarjeta--Patrick {
+    grid-row: 4;
+    grid-column: 1;
+  }
+
+  .tarjeta--Kira {
+    grid-row: 7 span 8;
+    grid-column: 1;
+  }
+}
+ */
